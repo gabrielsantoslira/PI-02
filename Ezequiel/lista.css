@@ -69,3 +69,18 @@ header{
     width:50px;
     font-weight:bold;
     background:transparent;}
+
+.conteudo{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.quadros{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    background-color: transparent;
+}
