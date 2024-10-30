@@ -1,0 +1,71 @@
+header{
+    background-color: white;
+    border-style: solid;
+    border-color: gainsboro;   
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;}
+
+.logo-texto{
+    color: red;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40px;}
+
+.menu li{
+    display: inline-block;}
+.menu li a{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin: 0 20px;}
+
+.login{
+    margin-right: 40px;}
+.login a button{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: RED;
+    border-color: red;}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;}
+
+#divBusca{
+    background-color:transparent;
+    border:solid 1px red;
+    border-radius:5px;
+    width:227px;
+    height: 30px;
+    margin-right: 60px;}
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent; 
+    font-size: 12px;
+    border:none;
+    height:25px;
+    width:170px;}
+  
+  #btnBusca{
+    font-size: 12px;
+    border:none;
+    float:center;
+    height:25px;
+    width:50px;
+    font-weight:bold;
+    background:transparent;}
