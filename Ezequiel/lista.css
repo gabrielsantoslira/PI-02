@@ -71,16 +71,12 @@ header{
     background:transparent;}
 
 .conteudo{
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-
-}
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 10fr);
+    gap: 30px;}
 .quadros{
     height: 150px;
     width: 150px;
-    border: 1px solid black;
-    background-color: transparent;
-}
+    border: 2px solid red;}
+    
