@@ -70,17 +70,4 @@ header{
     font-weight:bold;
     background:transparent;}
 
-.conteudo{
-    justify-items: center;
-    display: grid;
-    grid-template-columns: repeat(5, 10fr);
-    gap: 50px;}
-.quadros{
-    height: 150px;
-    width: 150px;
-    border: 2px solid red;
-    border-radius: 20px;
-    text-align: center;
-    align-self: center;
-}
     
