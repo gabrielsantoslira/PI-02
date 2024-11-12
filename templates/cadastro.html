@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/static/css/cadastro.css">
+    <link rel="shortcut icon" href="/static/img/escoteirossaomario.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>                
+                <li class="btnlogin"><a href="/templates/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form id="tipoCadastro">
+        <h1> Cadastro </h1>
+        <label for="selecionarTipoCadastro">Pais ou Administração?</label>
+        <select name="selecionarTipoCadastro" id="selecionarTipoCadastro">
+            <option value="Pais">Pais</option>
+            <option value="administracao">Administração</option>
+        </select>
+        <button type="submit">Continuar</button>
+    </form>
+
+    <form action="/Paiscadastro" id="cadastroPais"  method="post">
+        <h1>Cadastro Pais</h1>
+        <div id="alerta">
+        </div>
+
+        <p id="msgErroPais" >AS SENHAS NÃO SÃO IGUAIS!</p>
+        <label for="emailPais">Email</label>
+        <input type="email" name="emailPais" id="emailPais">
+        <label for="nomePais">Nome</label>
+        <input type="text" name="nomePais" id="nomePais">
+        <label for="senhaPais">Senha</label>
+        <input type="password" name="senhaPais" id="senhaPais">
+        <label for="repetirsenhaPais">Repetir senha</label>
+        <input type="password" name="repetirsenhaPais" id="repetirsenhaPais">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <form action="/cadastroadministracao" id="cadastroadministracao"  method="post">
+        
+        <h1>Cadastro Administração</h1>
+        <p id="msgErroadministracao" >AS SENHAS NÃO SÃO IGUAIS!</p>
+        <label for="emailadministracao">Email</label>
+        <input type="email" name="emailadministracao" id="emailadministracao">
+        <label for="nomeadministracao">Nome</label>
+        <input type="text" name="nomeadministracao" id="nomeadministracao">
+        <label for="senhaadministracao">Senha</label>
+        <input type="password" name="senhaadministracao" id="senhaadministracao">
+        <label for="repetirsenhaadministracao">Repetir senha</label>
+        <input type="password" name="repetirsenhaadministracao" id="repetirsenhaadministracao">
+        <input type="submit" value="Enviar">
+    </form>
+
+
+
+    <script src="/static/JS/cadastro.js"></script>
+</body>
+</html>
