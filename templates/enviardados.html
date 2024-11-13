@@ -25,6 +25,8 @@
             <a href="a"><button>LOGIN</button></a></div>
     </header>
 <!FINAL DO CABEÇALHO>
+
+
 <!INICIO DO RODAPÉ>
     <div class="footer">
         <p>@2024 - Projeto Integrador II - UNIVESP</p>
@@ -36,7 +38,27 @@
 
 
     <div class="conteudo">
-        <p>Aqui vai o conteudo da página</p>
+      
+<div id="formulario_produtos" class="formulario_produtos">
+    <form action="/novo_produto" id="enviar_produtos" method="post" enctype="multipart/form-data">
+        <label for="foto">Foto</label>
+        <input type="file" name="foto" id="foto">
+        <label for="nome">Objeto</label>
+        <input type="text" name="objeto" id="objeto">
+        <label for="tipo">Tipo</label>
+        <select name="selecionarTipoCadastro" id="selecionarTipoCadastro">
+            <option value="roupas">Roupa</option>
+            <option value="eletronicos">Eletrônico</option>
+            <option value="ferramentas">Ferramenta</option>
+            <option value="objeto">Objeto</option>
+            <option value="outro">Outro</option>
+        </select>
+        <label for="descricao">Descrição</label>
+        <textarea></textarea>
+        <input type="submit" value="Enviar">
+
+    </form>
+</div>
     </div>
     
     

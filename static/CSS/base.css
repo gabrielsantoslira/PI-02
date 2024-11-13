@@ -33,6 +33,24 @@ header{
     background-color: RED;
     border-color: red;}
 
+
+    #formulario_produtos{
+        flex: 1 0 50px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 10%;
+        width: 400px;
+        position: relative;        
+    
+    }
+
+    label{
+        margin-bottom: 10px;
+        font-weight: bold;
+        display: block;
+        align-items: center;
+    }
+
 .footer {
     position: fixed;
     left: 0;
@@ -69,3 +87,8 @@ header{
     width:50px;
     font-weight:bold;
     background:transparent;}
+
+
+
+
+

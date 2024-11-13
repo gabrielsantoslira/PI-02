@@ -5,51 +5,6 @@ import json
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'PI02'
 
-#caminhos definidos para as páginas
-@app.route("/")
-def cadastro():
-
-    return render_template('cadastro.html')
-
-
-@app.route('/login')
-def index():
-
-    return render_template('index.html')
-
-
-@app.route('/loginPais')
-def loginPais():
-
-    return render_template('loginPais.html')
-
-
-@app.route('/loginadministracao')
-def loginadministracao():
-
-    return render_template('loginadministracao.html')
-
-@app.route('/layout')
-def layout():
-
-    return render_template('layout.html')
-
-
-@app.route('/chamados')
-def chamados():
-
-    return render_template('chamados.html')
-
-@app.route('/sair')
-def sair():
-
-    return render_template('index.html')
-
-@app.route('/relatorio')
-def relatorio():
-
-    return render_template('documentos.html')
-
 
 #verificação de usuário e senha para Pais
 @app.route("/acessoPais", methods=['POST'])
@@ -57,7 +12,7 @@ def acessoPais():
     email = request.form.get('usuarioPais')
     senha = request.form.get('senhaPais')
 
-    with open('Pais.json') as Pais_json:
+    with open('cadastros.json') as Pais_json:
         listaDeUsuarios = json.load(Pais_json)
         cont = 0
         for usuario in listaDeUsuarios:
@@ -91,7 +46,7 @@ def Paiscadastro():
     nome = request.form.get('nomePais')
     senha = request.form.get('senhaPais')
 
-    with open('Pais.json') as Pais_json:
+    with open('cadastros.json') as Pais_json:
         listaDeUsuarios = json.load(Pais_json)
         for usuario in listaDeUsuarios:
             if usuario['email'] == email:
@@ -108,7 +63,7 @@ def Paiscadastro():
 
     novalista = listaDeUsuarios + user
 
-    with open("Pais.json", 'w') as Pais_json:
+    with open("cadastros.json", 'w') as Pais_json:
         json.dump(novalista, Pais_json, indent=4)
 
     return redirect('/loginPais')
@@ -117,5 +72,5 @@ def Paiscadastro():
 
 
 
-if __name__ in '__main__':
+if __name__ in '__app__':
     app.run( debug=True )
