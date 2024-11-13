@@ -12,6 +12,12 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 40px;}
 
+img{
+    height: 250px
+
+}
+
+
 .menu li{
     display: inline-block;}
 .menu li a{

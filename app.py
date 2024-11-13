@@ -19,7 +19,7 @@ def acessoPais():
             cont += 1
 
             if email == usuario['email'] and senha == usuario['senha']:
-                return redirect('/layout')
+                return redirect('/lista')
             if cont >= len(listaDeUsuarios):
                 flash('Email ou senha incorretos.')
                 return redirect('/loginPais')
@@ -32,7 +32,7 @@ def acessoadministracao():
     senha = request.form.get('senhaadministracao')
 
     if usuario == 'grupo10' and senha == '123':
-        return redirect('/layout')
+        return redirect('/lista')
     else:
         return redirect('/loginadministracao')
     
