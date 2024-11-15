@@ -1,75 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/CSS/base.css">
-    <link rel="shortcut icon" href="/static/img/escoteirossaomario.jpg" type="image/x-icon">
-    <title>Arquivo base </title>
+    <link rel="stylesheet" href="../static/CSS/base.css">
+    <link rel="stylesheet" href="../static/CSS/enviardados.css">
+    <link rel="shortcut icon" href="../static/img/escoteirossaomario.jpg" type="image/x-icon">
+
+    <title>Found It!</title>
 </head>
+
 <body>
-<!INICIO DO CABEÇALHO>
     <header>
-        <div class="logo-texto">
-            <a href="lista.html"><h1>FOUNT IT</h1></a>
-        </div>
-        <div class="menu">
-            <ul><li>
-                <div id="divBusca">
-                <input type="text" id="txtBusca" placeholder=""/>
-                <button id="btnBusca">Buscar</button>
-            </div></li>
-                <li><a href="/templates/sobre.html">Sobre</a></li>
-                <li><a href="a">Ajuda</a></li>    
-            </ul>
-        </div>  
-        <div class="login">
-            <a href="a"><button>Administração</button></a></div>
+        <div class="logo">FOUND IT!</div>
+        <input type="text" id="txtBusca" placeholder="Buscar..." />
+        <nav>
+            <a href="{{ url_for('sobre') }}">Sobre</a>
+            <a href="#">Ajuda</a>
+            <button class="login-btn"><a href="{{ url_for('login') }}">Login</a></button>
+        </nav>
     </header>
-<!FINAL DO CABEÇALHO>
 
-
-<!INICIO DO RODAPÉ>
     <div class="footer">
         <p>@2024 - Projeto Integrador II - UNIVESP</p>
     </div>
-<!FINAL DO RODAPÉ>
-
-
-
-
 
     <div class="conteudo">
-      
-<div id="formulario_produtos" class="formulario_produtos">
-    <form action="/novo_produto" id="enviar_produtos" method="post" enctype="multipart/form-data">
-        <label for="foto">Foto</label>
-        <input type="file" name="foto" id="foto">
-        <label for="nome">Objeto</label>
-        <input type="text" name="objeto" id="objeto">
-        <label for="tipo">Tipo</label>
-        <select name="selecionarTipoCadastro" id="selecionarTipoCadastro">
-            <option value="roupas">Roupa</option>
-            <option value="eletronicos">Eletrônico</option>
-            <option value="ferramentas">Ferramenta</option>
-            <option value="objeto">Objeto</option>
-            <option value="outro">Outro</option>
-        </select>
-        <label for="descricao">Descrição</label>
-        <textarea></textarea>
-            <input type="submit" value="Enviar">
-
-    </form>
-</div>
+        <div id="formulario_produtos" class="formulario_produtos">
+            <form action="/novo_produto" id="enviar_produtos" method="post" enctype="multipart/form-data">
+                <label for="foto">Foto</label><br>
+                <input type="file" name="foto" id="foto"><br>
+                <label for="nome">Objeto</label><br>
+                <input type="text" name="objeto" id="objeto"><br>
+                <label for="tipo">Tipo</label><br>
+                <select name="selecionarTipoCadastro" id="selecionarTipoCadastro">
+                    <option value="roupas">Roupa</option>
+                    <option value="eletronicos">Eletrônico</option>
+                    <option value="ferramentas">Ferramenta</option>
+                    <option value="objeto">Objeto</option>
+                    <option value="outro">Outro</option>
+                </select><br>
+                <label for="descricao">Descrição</label><br>
+                <textarea></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
     </div>
-    
-    
-
-    
-
-
-
-
-
 </body>
+
 </html>

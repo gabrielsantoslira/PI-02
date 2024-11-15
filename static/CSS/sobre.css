@@ -8,27 +8,20 @@
     padding: 80px;
 }
 
-.conteudo h3 {
-    margin: 20px;
-}
-
-.conteudo p {
-    margin: 20px;
-}
-
-img {
-    height: 100px;
-}
-
-.items {
+.banner {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    align-items: center;
+    margin: 10px 0;
 }
 
-.objeto {
-    border: 2px solid red;
-    padding: 40px;
-    border-radius: 20px;
+.banner img {
+    width: 300px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.text {
+    margin: 10px 0;
+    font-size: 1.2em;
 }

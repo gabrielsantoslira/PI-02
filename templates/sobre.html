@@ -1,90 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/CSS/base.css">
-    <link rel="shortcut icon" href="/static/img/escoteirossaomario.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../static/CSS/base.css">
+    <link rel="stylesheet" href="../static/CSS/sobre.css">
+    <link rel="shortcut icon" href="../static/img/escoteirossaomario.jpg" type="image/x-icon">
 
-    <title>Arquivo base </title>
+    <title>Sobre - Found It!</title>
 </head>
+
 <body>
-<!INICIO DO CABEÇALHO>
     <header>
-        <div class="logo-texto"><h1>FOUND IT</h1></div>
-        <div class="menu">
-            <ul><li>
-                <div id="divBusca">
-                <input type="text" id="txtBusca" placeholder=""/>
-                <button id="btnBusca">Buscar</button>
-            </div></li>
-                <li><a href="a">Sobre</a></li>
-                <li><a href="a">Ajuda</a></li>    
-            </ul>
-        </div>  
-        <div class="login">
-            <a href="a"><button>LOGIN</button></a></div>
+        <div class="logo">FOUND IT!</div>
+        <input type="text" id="txtBusca" placeholder="Buscar..." />
+        <nav>
+            <a href="{{ url_for('sobre') }}">Sobre</a>
+            <a href="#">Ajuda</a>
+            <button class="login-btn"><a href="{{ url_for('login') }}">Login</a></button>
+        </nav>
     </header>
-<!FINAL DO CABEÇALHO>
-<!INICIO DO RODAPÉ>
+
     <div class="footer">
         <p>@2024 - Projeto Integrador II - UNIVESP</p>
     </div>
-<!FINAL DO RODAPÉ>
-
-
-
-
 
     <div class="conteudo">
-        <title>BANNER 1</title>
-    <style>
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        .banner {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 10px 0;
-        }
-        .banner img {
-            width: 300px; /* Ajuste o tamanho conforme necessário */
-            height: auto;
-            margin: 0 10px;
-        }
-        .text {
-            margin: 10px 0;
-            font-size: 1.2em; /* Ajuste o tamanho da fonte conforme necessário */
-        }
-    </style>
-   
-        <body>
-           <div class="container">
-                <!-- Texto acima da primeira imagem -->
-                <div class="text">
-                    <p><b>SOBRE</b></p>
-                    <p>Nosso aplicativo de achados e perdidos foi desenvolvido para tornar mais fácil e rápida a localização de objetos perdidos. Com uma interface simples e intuitiva, ele permite que qualquer pessoa registre itens encontrados e procure por objetos que tenham sido extraviados. O objetivo é conectar pessoas e facilitar a recuperação de itens de valor, promovendo a colaboração e a confiança entre todos os usuários.</p>
-                </div>
-                
-                <div class="banner">
-                    <!-- Primeira Imagem -->
-                    <img src="/static/img/escoteiro1.jpg" alt="Primeiro Banner"> <!-- Insira o caminho da primeira imagem aqui -->
-        
-                    <!-- Segunda Imagem -->
-                    <img src="/static/img/escoteiro2.jpg" alt="Segundo Banner"> <!-- Insira o caminho da segunda imagem aqui -->
-                </div>
-        
-                <!-- Texto entre as duas imagens -->
-                <div class="text">
-                    <p><b>COMO AJUDAMOS</b></p>
-                    <p>O aplicativo de achados e perdidos é uma ferramenta que ajuda o grupo escoteiro a manter um ambiente organizado e acolhedor. Ao facilitar o retorno de objetos perdidos aos seus donos, o aplicativo promove o cuidado e o respeito entre os escoteiros, reforçando valores como responsabilidade e companheirismo. Além disso, ele fortalece o senso de comunidade, essencial para que o grupo escoteiro seja um espaço seguro e harmonioso para todos.</p>
-                </div>
-            </div>
-    
+        <div class="text">
+            <p><b>SOBRE</b></p>
+            <p>Nosso aplicativo de achados e perdidos foi desenvolvido para tornar mais fácil e
+                rápida a localização de objetos perdidos. Com uma interface simples e intuitiva,
+                ele permite que qualquer pessoa registre itens encontrados e procure por objetos
+                que tenham sido extraviados. O objetivo é conectar pessoas e facilitar a
+                recuperação de itens de valor, promovendo a colaboração e a confiança entre
+                todos os usuários.</p>
+        </div>
+
+        <div class="banner">
+            <img src="../static/img/escoteiro1.jpg" alt="Primeiro Banner">
+            <img src="../static/img/escoteiro2.jpg" alt="Segundo Banner">
+        </div>
+
+        <div class="text">
+            <p><b>COMO AJUDAMOS</b></p>
+            <p>O aplicativo de achados e perdidos é uma ferramenta que ajuda o grupo escoteiro a
+                manter um ambiente organizado e acolhedor. Ao facilitar o retorno de objetos
+                perdidos aos seus donos, o aplicativo promove o cuidado e o respeito entre os
+                escoteiros, reforçando valores como responsabilidade e companheirismo. Além
+                disso, ele fortalece o senso de comunidade, essencial para que o grupo escoteiro
+                seja um espaço seguro e harmonioso para todos.</p>
+        </div>
     </div>
 </body>
+
 </html>

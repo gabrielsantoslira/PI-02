@@ -6,39 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/CSS/base.css">
     <link rel="stylesheet" href="../static/CSS/item.css">
-    <title>FOUND IT!</title>
+    <link rel="shortcut icon" href="../static/img/escoteirossaomario.jpg" type="image/x-icon">
+
+    <title>Item - Found It!</title>
 </head>
 
 <body>
     <header>
-        <div class="logo-texto">
-            <h1>FOUND IT</h1>
-        </div>
-        <div class="menu">
-            <ul>
-                <li>
-                    <div id="divBusca">
-                        <input type="text" id="txtBusca" placeholder="" />
-                        <button id="btnBusca">Buscar</button>
-                    </div>
-                </li>
-                <li><a href="/templates/sobre.html">Sobre</a></li>
-                <li><a href="a">Ajuda</a></li>
-            </ul>
-        </div>
-        <div class="login">
-            <a href="a"><button>LOGIN</button></a>
-        </div>
+        <div class="logo">FOUND IT!</div>
+        <input type="text" id="txtBusca" placeholder="Buscar..." />
+        <nav>
+            <a href="{{ url_for('sobre') }}">Sobre</a>
+            <a href="#">Ajuda</a>
+            <button class="login-btn"><a href="{{ url_for('login') }}">Login</a></button>
+        </nav>
     </header>
+
+    <div class="footer">
+        <p>@2024 - Projeto Integrador II - UNIVESP</p>
+    </div>
 
     <div class="conteudo">
         <div class="divImagens">
             <div class="imagemPrincipal">
-                <img src="/static/img/martelo.jpg" alt="Martelo" class="martelo">
+                <img src="../static/img/martelo.jpg" alt="Martelo" class="martelo">
             </div>
             <div class="thumbnailContainer">
                 <div class="thumbnail">
-                    <img src="/static/img/martelo.jpg" alt="Martelo" class="martelo">
+                    <img src="../static/img/martelo.jpg" alt="Martelo" class="martelo">
                 </div>
                 <div class="thumbnail">Foto</div>
                 <div class="thumbnail">Foto</div>
@@ -52,10 +47,6 @@
             <p>Local do achado: Trilha</p>
             <button class="btnContato"> Contatar responsável</button>
         </div>
-    </div>
-
-    <div class="footer">
-        <p>@2024 - Projeto Integrador II - UNIVESP</p>
     </div>
 </body>
 

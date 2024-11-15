@@ -1,98 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/CSS/lista.css">
-    <link rel="stylesheet" href="/static/CSS/base.css">
-    <link rel="shortcut icon" href="/static/img/escoteirossaomario.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../static/CSS/base.css">
+    <link rel="stylesheet" href="../static/CSS/lista.css">
+    <link rel="shortcut icon" href="../static/img/escoteirossaomario.jpg" type="image/x-icon">
 
-    <title>Arquivo base </title>
+    <title>Lista - Found It!</title>
 </head>
 
 <body>
-    <!INICIO DO CABEÇALHO>
-        <header>
-            <div class="logo-texto">
-                <h1>FOUND IT</h1>
+    <header>
+        <div class="logo">FOUND IT!</div>
+        <input type="text" id="txtBusca" placeholder="Buscar..." />
+        <nav>
+            <a href="{{ url_for('sobre') }}">Sobre</a>
+            <a href="#">Ajuda</a>
+            <button class="login-btn"><a href="{{ url_for('login') }}">Login</a></button>
+        </nav>
+    </header>
+
+    <div class="footer">
+        <p>@2024 - Projeto Integrador II - UNIVESP</p>
+    </div>
+
+    <div class="conteudo">
+        <h2>Categorias:</h2>
+        <p>Roupas - Brinquedos - Eletrônicos</p>
+
+        <div class="items">
+            <div class="objeto">
+                <a href="../templates/item.html">
+                    <img src="../static/img/martelo.jpg" alt="Photo 1">
+                    <p>Martelo multiuso, encontrado na trilha</p>
+                </a>
             </div>
-            <div class="menu">
-                <ul>
-                    <li>
-                        <div id="divBusca">
-                            <input type="text" id="txtBusca" placeholder="" />
-                            <button id="btnBusca">Buscar</button>
-                        </div>
-                    </li>
-                    <li><a href="/templates/sobre.html">Sobre</a></li>
-                    <li><a href="a">Ajuda</a></li>
-                </ul>
+            <div class="objeto">
+                <img src="" alt="Photo 1">
+                <p>Descrição do objeto perdido</p>
             </div>
-            <div class="login">
-                <a href="/cadastro"><button>LOGIN</button></a>
+            <div class="objeto">
+                <img src="" alt="Photo 1">
+                <p>Descrição do objeto perdido</p>
             </div>
-        </header>
-        <!FINAL DO CABEÇALHO>
-            <!INICIO DO RODAPÉ>
-                <div class="footer">
-                    <p>@2024 - Projeto Integrador II - UNIVESP</p>
-                </div>
-                <!FINAL DO RODAPÉ>
-
-                    <!INICIO PROGRAMAÇÃO DA PÁGINA>
-
-
-                        <p><strong>Categorias:</strong></p>
-                        <p>Roupas - Brinquedos - Eletrônicos</p>
-
-                        <div class="conteudo">
-                            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px;">
-                                <div style="border: 2px solid red; padding: 40px;border-radius: 20px;">
-                                    <a href="/templates/item.html">
-                                        <img src="/static/img/martelo.jpg" alt="Photo 1">
-                                        <p>Martelo multiuso, encontrado na trilha</p>
-                                    </a>
-                                </div>
-                                <div style="border: 2px solid red; padding: 40px;border-radius: 20px;">
-                                    <img src="" alt="Photo 1">
-                                    <p>Descrição do objeto perdido</p>
-                                </div>
-                                <div style="border: 2px solid red; padding: 40px;border-radius: 20px;">
-                                    <img src="" alt="Photo 1">
-                                    <p>Descrição do objeto perdido</p>
-                                </div>
-                                <div style="border: 2px solid red; padding: 40px;border-radius: 20px;">
-                                    <img src="" alt="Photo 1">
-                                    <p>Descrição do objeto perdido</p>
-                                </div>
-                                <div style="border: 2px solid red; padding: 40px;border-radius: 20px;">
-                                    <img src="" alt="Photo 1">
-                                    <p>Descrição do objeto perdido</p>
-                                </div>
-                                <div style="border: 2px solid red; padding: 40px;border-radius: 20px;">
-                                    <img src="" alt="Photo 1">
-                                    <p>Descrição do objeto perdido</p>
-                                </div>
-                                <div style="border: 2px solid red; padding: 40px;border-radius: 20px;">
-                                    <img src="" alt="Photo 1">
-                                    <p>Descrição do objeto perdido</p>
-                                </div>
-                                <div style="border: 2px solid red; padding: 40px;border-radius: 20px;">
-                                    <img src="" alt="Photo 1">
-                                    <p>Descrição do objeto perdido</p>
-                                </div>
-
-                            </div>
-
-
-
-
-
-
-
-
-
+            <div class="objeto">
+                <img src="" alt="Photo 1">
+                <p>Descrição do objeto perdido</p>
+            </div>
+            <div class="objeto">
+                <img src="" alt="Photo 1">
+                <p>Descrição do objeto perdido</p>
+            </div>
+            <div class="objeto">
+                <img src="" alt="Photo 1">
+                <p>Descrição do objeto perdido</p>
+            </div>
+            <div class="objeto">
+                <img src="" alt="Photo 1">
+                <p>Descrição do objeto perdido</p>
+            </div>
+            <div class="objeto">
+                <img src="" alt="Photo 1">
+                <p>Descrição do objeto perdido</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

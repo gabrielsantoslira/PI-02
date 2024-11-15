@@ -1,95 +1,76 @@
-header{
-    background-color: white;
-    border-style: solid;
-    border-color: gainsboro;   
-    display: flex ;
-    justify-content: space-between;
-    align-items: center;}
-
-.logo-texto{
-    color: red;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 40px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.menu li{
-    display: inline-block;}
-.menu li a{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    font-weight: bold;
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px;
+    background-color: white;
+    border-bottom: 2px solid lightgray;
+}
+
+.logo {
+    color: #FF6F61;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-left: 80px;
+}
+
+header input {
+    padding: 8px 72px;
+    border-radius: 6px;
+    border: 1px solid #FF6F61;
+    font-size: 14px;
+    text-align: center;
+}
+
+header input:focus {
+    border-color: #FF6F61;
+    outline: none;
+}
+
+header nav a {
     color: black;
-    margin: 0 20px;}
-
-.login{
-    margin-right: 40px;}
-.login a button{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 14px;
     text-decoration: none;
-    color: white;
+    padding: 0px 24px;
     font-weight: bold;
-    background-color: RED;
-    border-color: red;}
+    font-size: 18px;
+}
 
+.login-btn {
+    margin-right: 80px;
+    padding: 10px 24px;
+    border-radius: 14px;
+    border: none;
+    background-color: #FF6F61;
+    cursor: pointer;
+}
 
-    #formulario_produtos{
-        flex: 1 0 50px;
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-bottom: 10%;
-        width: 400px;
-        position: relative;        
-    
-    }
-
-    label{
-        margin-bottom: 10px;
-        font-weight: bold;
-        display: block;
-        align-items: center;
-    }
+.login-btn a {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
 
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    padding: 12px;
+    background-color: #FF6F61;
     color: white;
     font-weight: bold;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;}
-
-#divBusca{
-    background-color:transparent;
-    border:solid 1px red;
-    border-radius:5px;
-    width:227px;
-    height: 30px;
-    margin-right: 60px;}
-  
-  #txtBusca{
-    float:left;
-    background-color:transparent; 
-    font-size: 12px;
-    border:none;
-    height:25px;
-    width:170px;}
-  
-  #btnBusca{
-    font-size: 12px;
-    border:none;
-    float:center;
-    height:25px;
-    width:50px;
-    font-weight:bold;
-    background:transparent;}
-
-
-
-
-
+    font-size: 14px;
+}

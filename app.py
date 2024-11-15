@@ -1,10 +1,37 @@
-from flask import Flask, render_template,request,redirect,flash,session
+from flask import Flask, render_template,request,redirect,flash
 import json
 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'PI02'
 
+@app.route("/")
+def index():
+    return render_template('cadastro.html')
+
+@app.route("/item")
+def item():
+    return render_template('item.html')
+
+@app.route("/sobre")
+def sobre():
+    return render_template('sobre.html')
+
+@app.route("/login")
+def login():
+    return render_template('login.html')
+
+@app.route("/cadastro")
+def cadastro():
+    return render_template('cadastro.html')
+
+@app.route("/enviardados")
+def enviarDados():
+    return render_template('enviardados.html')
+
+@app.route("/lista")
+def lista():
+    return render_template('lista.html')
 
 #verificação de usuário e senha para Pais
 @app.route("/acessoPais", methods=['POST'])
@@ -68,9 +95,5 @@ def Paiscadastro():
 
     return redirect('/loginPais')
 
-
-
-
-
-if __name__ in '__app__':
-    app.run( debug=True )
+if __name__ in '__main__':
+    app.run(host="0.0.0.0", port=80)
